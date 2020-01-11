@@ -1,0 +1,158 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ainne Oum Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Ainne Oum Web Development">
+    <meta name="description" content="Hi, I'm Ainne Front End Web Developer">
+    <meta property="og:image" content="images\hero-section-shot.png">
+    <!-- Main CSS stylesheet link -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Google font cdn -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+<body>
+<!-- Start Nav Bar -->
+    <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li><i class="fas fa-home" style="color: #6772e5"></i>
+                    <a href="#" class="nav-links">Home</a>
+                </li>
+                <li><i class="fa fa-address-card" style="color:#3ecf8e"></i>
+                    <a href="#about" class="nav-links">About</a>
+                </li>
+                <li><i class="fas fa-laptop-code" style="color:rgb(236, 103, 42)"></i>
+                    <a href="#skills" class="nav-links">Skills</a>
+                </li>
+                <li><i class="fas fa-project-diagram" style="color: #68D4F8"></i>
+                    <a href="#projects" class="nav-links">Projects</a>
+                </li>
+                <li><i class="fas fa-paper-plane" style="color: #f3a3eb"></i>
+                    <a href="#contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+<!-- End Nav Bar -->
+<!-- Grid header section -->
+<div class="grid-container"></div> <!-- Skews the block shape -->
+    <div class="hero-text rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 0px, 0px);">
+        <h1><span>Hi, I'm Ainne - a front-end web developer</span></h1>
+        <br>
+        <h2>I'm a creative front-end web developer, knowledgeable in HTML, CSS, JavaScript, React.js, Axios, Bootstrap4, and more.</h2>
+        <br>
+        <a href="#about"><button class="hero-button">Learn More</button></a>
+        <a href="#projects"><button class="hero-button2">See Projects</button></a>
+    </div>
+<!--About Section -->
+<div class="about-section">
+    <div class="about-txt" id="about">
+      <h2>Who am I?</h2>
+        <p>I am web developer interested in all kinds of visual communication and technologies.
+           I enjoy utilizing a variety of languages and developing efficient and effective
+           web applications.
+          <br>
+          <br>
+          I have worked with many frameworks and libraries to complete a variety projects
+          and always learning new technologies.
+        </p>
+    </div>
+</div>
+
+<section class="skillsSection" id="skills">
+    <div class="skills">
+        <h2>My Tools</h2>
+        <div class="skillIcons">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-github-plain-wordmark colored"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Start Projects section -->
+<section class="dark">
+  <div class="title" id="projects">
+    <h2>Projects</h2>
+  </div>
+
+  <section class="projects">
+<!-- Project One - Bitcoin News Feed -->
+    <div class="project1">
+        <div class="projectOneLeft">
+          <img src="./images/bitcoin-laptop.png" alt="bitcoin news feed">
+          <img src="./images/bitcoin-iphone.png" alt="bitcoin news feed">
+        </div>
+        <div class="projectOneRight">
+            <h2>Bitcoin News Feed</h2>
+            <br>
+            <p>Built bitcoin news feed, accessing News API with Axios, built out resusable components
+               in React.js, HTML, CSS, JavaScript, and made responsive with CSS Flexbox.
+            </p>
+            <a href="https://bitcoin-world-news.netlify.com/" class="project-live" target="blank">Live Site</a>
+        </div>
+    </div>
+      <hr class="divider-line">
+  </section>
+</section>
+<!-- End Projects section -->
+
+
+<section class="dark">
+    <div class="contact-bg" id="contact">
+        <h2>Contact Me </h2>
+        <div class="contact-box-section">
+            <div class="contact-info">
+                <form id="form" action="POST" method="post"><input type="hidden" name="form-name" value="form">
+                   <label for="name"></label>
+                   <input type="text" name="name" placeholder="Full Name" required="">
+                   <label for="email"></label>
+                   <input type="email" name="email" placeholder="Email" label="" for="email" required="">
+                   <label for="company"></label>
+                   <input type="text" name="company" placeholder="Company" label="" for="company">
+                   <button class="contact-button" type="submit" form="form">Send</button>
+                </form>
+              </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">×</span>
+              <h2>About the Site</h2>
+            </div>
+            <div class="modal-body">
+                <p>This site is built with HTML, CSS, JavaScript, FontAwesome Icons, Google Fonts,
+                   and devicon. No frameworks were used.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+<footer id="foot">
+  <div class="social-section">
+      <a href="https://www.linkedin.com/in/ainneoum/" target="blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ainneo/" target="blank"><i class="fab fa-github"></i></a>
+      <button id="myBtn">About the Site</button>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
