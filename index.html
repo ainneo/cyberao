@@ -1,7 +1,6 @@
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ainne Oum Web Development</title>
@@ -11,6 +10,7 @@
     <meta property="og:image" content="images\hero-section-shot.png">
     <!-- Main CSS stylesheet link -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="media-queries.css">
     <!-- Google font cdn -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -20,23 +20,23 @@
 <body>
 <!-- Start Nav Bar -->
     <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars fa-lg"></i>
-            </span>
-            <ul class="main-nav" id="js-menu">
-                <li><i class="fas fa-home" style="color: #6772e5"></i>
+            <div class="navbar-toggle" id="js-nav-toggle"> <!--class for styling, id for js-->
+                <i class="fas fa-bars fa-lg"></i> <!-- Nav Bar Icon-->
+            </div>
+            <ul class="main-nav" id="js-menu"><!--class for styling, id for js-->
+                <li><i class="fas fa-home" ></i>
                     <a href="#" class="nav-links">Home</a>
                 </li>
-                <li><i class="fa fa-address-card" style="color:#3ecf8e"></i>
+                <li><i class="far fa-address-card"></i>
                     <a href="#about" class="nav-links">About</a>
                 </li>
-                <li><i class="fas fa-laptop-code" style="color:rgb(236, 103, 42)"></i>
+                <li><i class="fas fa-laptop-code"></i>
                     <a href="#skills" class="nav-links">Skills</a>
                 </li>
-                <li><i class="fas fa-project-diagram" style="color: #68D4F8"></i>
+                <li><i class="fas fa-project-diagram"></i>
                     <a href="#projects" class="nav-links">Projects</a>
                 </li>
-                <li><i class="fas fa-paper-plane" style="color: #f3a3eb"></i>
+                <li><i class="fas fa-paper-plane" ></i>
                     <a href="#contact" class="nav-links">Contact</a>
                 </li>
             </ul>
@@ -45,7 +45,7 @@
 <!-- Grid header section -->
 <div class="grid-container"></div> <!-- Skews the block shape -->
     <div class="hero-text rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 0px, 0px);">
-        <h1><span>Hi, I'm Ainne - a front-end web developer</span></h1>
+        <h1><span>Hello, I'm Ainne - a front-end web developer</span></h1>
         <br>
         <h2>I'm a creative front-end web developer, knowledgeable in HTML, CSS, JavaScript, React.js, Axios, Bootstrap4, and more.</h2>
         <br>
@@ -56,9 +56,7 @@
 <div class="about-section">
     <div class="about-txt" id="about">
       <h2>Who am I?</h2>
-        <p>I am web developer interested in all kinds of visual communication and technologies.
-           I enjoy utilizing a variety of languages and developing efficient and effective
-           web applications.
+        <p>I am a self taught web developer interested in all kinds of technologies.
           <br>
           <br>
           I have worked with many frameworks and libraries to complete a variety projects
@@ -76,7 +74,7 @@
             <i class="devicon-javascript-plain colored"></i>
             <i class="devicon-bootstrap-plain-wordmark colored"></i>
             <i class="devicon-react-original-wordmark colored"></i>
-            <i class="devicon-github-plain-wordmark colored"></i>
+            <i class="devicon-github-plain-wordmark colored" style="color: white"></i>
         </div>
     </div>
 </section>
@@ -89,10 +87,10 @@
 
   <section class="projects">
 <!-- Project One - Bitcoin News Feed -->
-    <div class="project1">
+    <div class="project-box">
         <div class="projectOneLeft">
           <img src="./images/bitcoin-laptop.png" alt="bitcoin news feed">
-          <img src="./images/bitcoin-iphone.png" alt="bitcoin news feed">
+          <img class="iphone" src="./images/bitcoin-iphone.png" alt="bitcoin news feed">
         </div>
         <div class="projectOneRight">
             <h2>Bitcoin News Feed</h2>
@@ -103,11 +101,41 @@
             <a href="https://bitcoin-world-news.netlify.com/" class="project-live" target="blank">Live Site</a>
         </div>
     </div>
-      <hr class="divider-line">
+      <hr style="border: 1px solid grey">
+    <div class="project-box">
+        <div class="projectOneLeft">
+          <img src="./images/bitcoin-laptop.png" alt="bitcoin news feed">
+          <img class="iphone" src="./images/bitcoin-iphone.png" alt="bitcoin news feed">
+        </div>
+        <div class="projectOneRight">
+            <h2>Tech News for Geeks</h2>
+            <br>
+            <p>Built news feed, accessing multiple News APIs with Axios, built out components in React.js,
+               HTML, CSS, JavaScript, and made responsive with CSS Grid & Flexbox.
+            </p>
+            <a href="https://tech-news-for-geeks.netlify.com/" class="project-live" target="blank">Live Site</a>
+        </div>
+    </div>
+      <hr style="border: 1px solid grey">
+    <div class="project-box">
+        <div class="projectOneLeft">
+          <img src="./images/bitcoin-laptop.png" alt="bitcoin news feed">
+          <img class="iphone" src="./images/bitcoin-iphone.png" alt="bitcoin news feed">
+        </div>
+        <div class="projectOneRight">
+            <h2>Bitcoin News Feed</h2>
+            <br>
+            <p>Built with React.js, Bootstrap4, HTML, CSS, and JavaScript. I made this site as practice in
+            developing a React.js website.
+            </p>
+            <a href="https://space-net.netlify.com/" class="project-live" target="blank">Live Site</a>
+        </div>
+    </div>
+
   </section>
 </section>
-<!-- End Projects section -->
 
+<!-- End Projects section -->
 
 <section class="dark">
     <div class="contact-bg" id="contact">
@@ -129,11 +157,11 @@
 </section>
 
     <!-- Footer Modal -->
-    <div id="myModal" class="modal">
+    <div id="js-modal" class="modal"><!--open modal with js-->
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-              <span class="close">×</span>
+              <span class="close">×</span><!-- close modal with js-->
               <h2>About the Site</h2>
             </div>
             <div class="modal-body">
@@ -141,7 +169,6 @@
                    and devicon. No frameworks were used.
                 </p>
             </div>
-
         </div>
     </div>
 
@@ -149,10 +176,114 @@
   <div class="social-section">
       <a href="https://www.linkedin.com/in/ainneoum/" target="blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/ainneo/" target="blank"><i class="fab fa-github"></i></a>
-      <button id="myBtn">About the Site</button>
+      <button id="js-modal-button">About the Site</button><!--target button for model-->
   </div>
 </footer>
 
 <script src="main.js"></script>
 
 </body>
+
+
+
+<html>
+<head>
+  <script>var FormSubmission = {"title":"test","email":"test@test.com","name":"test","first_name":"test","last_name":null,"company":"test","summary":"\u003cstrong\u003etest\u003c/strong\u003e test","body":"test","data":{"name":"test","email":"test@test.com","company":"test","message":"test","ip":"66.10.76.21","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36","referrer":"https://treygordon.com/"},"created_at":"2020-01-13T05:40:52.985Z","human_fields":{"Name":"test","Email":"test@test.com","Company":"test","Message":"test"},"ordered_human_fields":[{"title":"Name","name":"name","value":"test"},{"title":"Email","name":"email","value":"test@test.com"},{"title":"Company","name":"company","value":"test"},{"title":"Message","name":"message","value":"test"}],"id":"5e1c02e4f336e1f33cebd13e","form_id":"5d1bdc0373192e0009bcf7c9","site_url":"https://treygordon.com","form_name":"form"};</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Thank you!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      background: rgb(14, 30, 37);
+      color: white;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      max-width: 364px;
+      padding: 24px;
+      background: white;
+      color: rgb(14, 30, 37);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+    }
+
+    a {
+      margin: 0;
+      text-decoration: none;
+      font-weight: 600;
+      line-height: 24px;
+      color: #00ad9f;
+    }
+
+    a svg {
+      position: relative;
+      top: 2px;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      color: #007A70;
+    }
+
+    a:hover svg path{
+      fill: #007A70;
+    }
+
+    p:last-of-type {
+      margin: 0;
+    }
+    </style>
+
+</head>
+  <body cz-shortcut-listen="true">
+
+    <div class="main">
+      <div class="card">
+        <div class="header">
+          <h1>Thank you!</h1>
+        </div>
+        <div class="body">
+
+          <p>Your form submission has been received.</p>
+
+          <p>
+            <a id="back-link" href="https://">← Back to our site</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function() {
+        if (document.referrer && document.location.host && document.referrer.match(new RegExp("^https?://" + document.location.host))) {
+          document.getElementById("back-link").setAttribute("href", document.referrer);
+        }
+      })();
+    </script>
+
+    https://treygordon.com/
