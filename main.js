@@ -9,6 +9,9 @@ navToggle.addEventListener('click', function(){
   mainNav.classList.toggle('active');
 });
 
+
+
+
 // Modal popup
 let btn = document.getElementById("js-modal-button");// Get the button that opens the modal
 let modal = document.getElementById("js-modal");// When the user clicks the button, open the modal
@@ -27,6 +30,20 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+
+
+//submission form
+function submitByID() {
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+
+{
+document.getElementById("form_id").submit(); //form submission
+alert(" Name : " + name + " n Form Id : " + document.getElementById("form_id").getAttribute("id") + "nn Form Submitted Successfully......");
+}
 }
 
 //Notes:
