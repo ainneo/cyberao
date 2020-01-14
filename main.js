@@ -11,7 +11,6 @@ navToggle.addEventListener('click', function(){
 
 
 
-
 // Modal popup
 let btn = document.getElementById("js-modal-button");// Get the button that opens the modal
 let modal = document.getElementById("js-modal");// When the user clicks the button, open the modal
@@ -31,21 +30,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// Name and Email validation Function.
-
-
-//submission form
-// Submit form with id function.
-function submitId() {
-let name = document.getElementById("name").name;
-
-
-
-document.getElementById("form").submit(); //form submission
-alert("Thank you " + name + " your information was submitted successfully...");
-}
-
 
 
 

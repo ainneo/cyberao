@@ -51,8 +51,9 @@
     .project-box{
       display: block;
     }
-    .projectOneright{
+    .projects h2{
       padding-top: 3rem
+
     }
 
     .project-live{
