@@ -32,19 +32,22 @@ window.onclick = function(event) {
   }
 }
 
-
+// Name and Email validation Function.
 
 
 //submission form
-function submitByID() {
-let name = document.getElementById("name").value;
-let email = document.getElementById("email").value;
+// Submit form with id function.
+function submitId() {
+let name = document.getElementById("name").name;
 
-{
-document.getElementById("form_id").submit(); //form submission
-alert(" Name : " + name + " n Form Id : " + document.getElementById("form_id").getAttribute("id") + "nn Form Submitted Successfully......");
+
+
+document.getElementById("form").submit(); //form submission
+alert("Thank you " + name + " your information was submitted successfully...");
 }
-}
+
+
+
 
 //Notes:
 //getElementsByClassName returns an array-like object.

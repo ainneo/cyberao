@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -44,7 +45,7 @@
 <!-- End Nav Bar -->
 <!-- Grid header section -->
 <div class="grid-container"></div> <!-- Skews the block shape -->
-    <div class="hero-text rellax" data-rellax-speed="-1" style="transform: translate3d(0px, 0px, 0px);">
+    <div class="hero-text" >
         <h1><span>Hello, I'm Ainne - a front-end web developer</span></h1>
         <br>
         <h2>I'm a creative front-end web developer, knowledgeable in HTML, CSS, JavaScript, React.js, Axios, Bootstrap4, and more.</h2>
@@ -141,15 +142,21 @@
         <h2>Contact Me </h2>
         <div class="contact-box-section">
             <div class="contact-info">
-                <form id="form" action="POST" method="post">
+
+                <form id="form" action="#" method="GET"> <!--action defines URL location, methods defines HTTP method to send data (get/post)-->
+                <!-- data will be sent to URL(action="") using the HTTP Post method The way this script will handle that data is up to you. Each server-side language (PHP, Python, Ruby, Java, C#, etc.) -->
                    <input type="hidden" name="form-name" value="form">
                    <label for="name"></label>
-                   <input type="text" name="name" placeholder="Full Name" required="">
+                   <input type="text" id="name" name="name" placeholder="Full Name" required>
+
                    <label for="email"></label>
-                   <input type="email" name="email" placeholder="Email" label="" for="email" required="">
-                   <label for="company"></label>
-                   <input type="text" name="company" placeholder="Company" label="" for="company">
-                   <button class="contact-button" type="submit" form="form">Send</button>
+                   <input type="email" id="email" name="email" placeholder="Email" required>
+
+                   <label class="message">Message</label>
+                   <textarea id="msg"></textarea>
+
+                   <button class="contact-button" onclick="submitId()">Send</button>   <!-- HTML5 form valdation only works with a button elem-->
+
                 </form>
               </div>
         </div>

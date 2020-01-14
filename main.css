@@ -3,14 +3,14 @@
   font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 html, body {
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
   max-width: 1900px; /*max width - keeps everything centered beyond the width*/
   background-color: #242629;
-  font-weight: 600;
   font-size: 16px;
 }
 
@@ -35,7 +35,7 @@ color: white;
   font-size: 1.2rem;
   background-image: transparent;
   z-index: 5; /* brings elems to the front*/
-  width: 95%; /*leave 2.5% margins on both sides*/
+  width: 90%; /*leave 2.5% margins on both sides*/
   max-width: 1100px; /*max width once it goes beyound width*/
   margin-left: auto; /*centers*/
   margin-right: auto; /*centers*/
@@ -67,10 +67,11 @@ display: block;
 .navbar-toggle {
   color: rgba(255, 255, 255, 0.8);
   font-size: 2rem;
-  position: absolute; /*element is positioned absolute to its nearest relative.*/
+  position: fixed; /*element is positioned absolute to its nearest relative.*/
   top: 1.2rem;
   right: .10rem;
-  z-index: 6
+  z-index: 6;
+  padding: 1rem
 }
 /* End Navbar Section */
 
@@ -80,7 +81,7 @@ text-align: left;
 margin-top: 5rem;
 margin-left: auto;
 margin-right: auto;
-width: 95%;
+width: 90%;
 max-width: 1100px;
 z-index: 2; /*bring text to front of grid-container(skew shape)*/
 position: relative;
@@ -140,9 +141,11 @@ button:hover {
   width: 100%;
   display: grid;
   background: #16161A;
-  height: 100vh;
-  max-height: 55rem;
-  transform: skewY(-11deg);
+  border-bottom: 3px solid #010101;
+ border-top: 3px solid #010101;
+  height: 80vh;
+  max-height: 30rem;
+  transform: skewY(-12deg);
   transform-origin: 0;
   position: absolute; /*positioned absolute to its nearest relative - hero-text.*/
   /*hero-text is relative and grid-container is absolute.*/
@@ -159,9 +162,9 @@ button:hover {
 
 /* About Section */
 .about-section {
-  margin-top: 5rem;
+  margin-top: 8rem;
   position: relative;
-  width: 95%;
+  width: 90%;
   max-width: 1100px;
   display: flex;
   flex-direction: row;
@@ -186,7 +189,7 @@ button:hover {
   font-size: 1.2rem;
   line-height: 1.7rem;
   color: #94A1B2;
-  padding-bottom: 3.1rem;
+  padding-bottom: 4rem;
   text-align: right;
 }
 
@@ -194,8 +197,8 @@ button:hover {
 /* SKills Section */
 .skillsSection {
 background-color: #242629;
-border-bottom: 3px solid #010101;
-border-top: 3px solid #010101;
+/* border-bottom: 3px solid #010101;
+border-top: 3px solid #010101; */
 position: relative;/*element is positioned relative to its normal position.*/
 z-index: 2;
 }
@@ -215,7 +218,7 @@ font-size: 4rem;
 .skillIcons {
 margin:auto;
 max-width: 1100px;
-width: 95%;
+width: 90%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -225,6 +228,8 @@ padding-bottom: 5rem
 /* Projects */
 .dark {
   background-color: #16161A;
+  border-bottom: 2px solid #010101;
+ border-top: 2px solid #010101;
 }
 
 .title h2 {
@@ -242,7 +247,7 @@ color: #fffffe;
 }
 
 .projects {
-width: 95%;
+width: 90%;
 max-width: 1100px;
 margin: auto;
 padding-bottom: 5rem;
@@ -308,7 +313,7 @@ top: 200px;
 }
 
 .contact-info {
-width: 95%;
+width: 90%;
 max-width: 800px;
 margin: 0 auto;
 display:flex;
@@ -318,16 +323,20 @@ height: 18rem;
 }
 
 .contact-button {
-  color: #FFFFFE;
+  display: inline-block;
+  color: #fffffe;
   background-color:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
   background-image: linear-gradient(-90deg, rgb(163, 39, 143) 0%, rgb(229, 47, 80) 100%);
-  width: 6.25rem;
-  padding: .5rem;
-  margin-top: 1.4rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 .6rem;
   border-radius: 4px;
   font-size: 1rem;
   text-transform: uppercase;
   border: none;
+  margin: 1.5rem .2rem;
+  text-decoration: none;
+  width: 6.25rem;
 }
 
 .contact-info form {
@@ -353,6 +362,21 @@ color: white;
   color: #94a1b2;
 }
 
+.message{
+  color: #94a1b2;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+
+textarea {
+  color: white;
+  background-color: #242629;
+  max-width: 500px;
+  min-height: 60px;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
 
 /* Start Social Media Section */
 .social-section {
@@ -374,7 +398,6 @@ color: #fffffe;
 
 /*Footer Section*/
 footer {
-background-color: #242629;
 width: 100%;
 display: flex;
 flex-direction: row;
