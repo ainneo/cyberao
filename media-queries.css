@@ -56,6 +56,10 @@
 
     }
 
+    .tech {
+      padding-top: 16rem;
+    }
+
     .project-live{
     display: block;
     margin: 0 auto;
@@ -94,5 +98,10 @@
   @media (max-width: 500px) {
   html{
     font-size: 12px
+    }
+
+    .tech {
+      padding-top: 32rem;
+        height: 32rem;
     }
   }

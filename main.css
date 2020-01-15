@@ -6,6 +6,10 @@
   -webkit-overflow-scrolling: touch;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 html, body {
 
   scroll-behavior: smooth;
@@ -33,7 +37,7 @@ color: white;
 .navbar {
   font-size: 1.5rem;
   background-image: transparent;
-  z-index: 5; /* brings elems to the front*/
+  z-index: 8; /* brings elems to the front*/
   width: 90%; /*leave 2.5% margins on both sides*/
   max-width: 1100px; /*max width once it goes beyound width*/
   margin-left: auto; /*centers*/
@@ -140,12 +144,12 @@ line-height: 1.75rem;
 }
 
 .tech {
-  transform: rotate(-12deg);
-  margin-left: 44%;
+  transform: rotate(-8deg);
+  margin-left: 50%;
   display: block;
   position: absolute;
-  padding-top: 18rem;
-  height: 600px;
+  padding-top: 12rem;
+  height: 40rem;
 }
 
 /* About Section */
