@@ -33,6 +33,7 @@ window.onclick = function(event) {
 
 
 
+
 //Notes:
 //getElementsByClassName returns an array-like object.
 //Array or array-like object items can be access using the index of the item which starts from 0, see example above.
