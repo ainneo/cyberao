@@ -1,7 +1,10 @@
+# Cyberao
 ## Description
-No frameworks were used. This is a very simple static web site, hosted on github, with no dependencies or packages.
+This is a very simple static web site showcasing my react.js projects.
 
 ## Technologies Used
 * JavaScript
 * CSS
 * HTML
+
+
