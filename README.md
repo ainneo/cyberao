@@ -6,5 +6,6 @@ This is a very simple static web site showcasing my react.js projects.
 * JavaScript
 * CSS
 * HTML
+* Font Awesome Icons
 
 
