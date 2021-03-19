@@ -7,4 +7,6 @@ This is a simple responsive static web site showcasing my react.js projects.
 * HTML5
 * Font Awesome Icons
 
+#### view it live here: https://ainneo.github.io/cyberao/
+
 
