@@ -1,6 +1,5 @@
-# Cyberao
 ## Description
-This is a very simple responsive static web site showcasing my react.js projects.
+This is a simple responsive static web site showcasing my react.js projects.
 
 ## Technologies Used
 * JavaScript
